@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
+import Portfolio from './components/Protfolio';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to React with TypeScript</h1>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+      <Portfolio />
     </div>
   );
 }
