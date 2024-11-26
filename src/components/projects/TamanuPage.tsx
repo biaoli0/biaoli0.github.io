@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { ArrowDown } from 'lucide-react';
 
+const backgroundImage = '/images/tamanu.jpg';
+
 const TamanuPage = () => {
   // Project data
   const projects = [
@@ -65,12 +67,7 @@ const TamanuPage = () => {
       {/* Initial Section */}
       <section className="h-screen relative flex flex-col items-center justify-center overflow-hidden">
         {/* Background Image Layer */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(' + '/images/tamanu.jpg' + ')',
-          }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-tamanu">
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-900/50 to-gray-900/10" />
 
