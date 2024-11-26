@@ -12,3 +12,5 @@
 .aider*
 .env
 node_modules
+build/images/.DS_Store
+build/.DS_Store

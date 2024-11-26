@@ -2,6 +2,7 @@
   "name": "MyProtfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@types/node": "^16.18.0",
     "@types/react": "^18.2.0",
@@ -38,7 +39,9 @@
     ]
   },
   "devDependencies": {
+    "@craftamap/esbuild-plugin-html": "^0.8.0",
     "autoprefixer": "^10.4.20",
+    "esbuild": "^0.24.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15"
   }

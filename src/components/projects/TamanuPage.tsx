@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowDown } from 'lucide-react';
 
-const backgroundImage = 'images/tamanu.jpg';
-
 const TamanuPage = () => {
   // Project data
   const projects = [
@@ -16,7 +14,7 @@ const TamanuPage = () => {
         'Integrated data visualization libraries including Recharts and Mapbox',
       ],
       tech: ['React', 'TypeScript', 'Recharts', 'Node.js', 'PostgreSQL'],
-      image: 'images/tamanu/patient-charts-sample.png',
+      image: '/images/tamanu/patient-charts-sample.png',
     },
     {
       id: 2,
@@ -30,7 +28,7 @@ const TamanuPage = () => {
         'Integrated with role-based access control',
       ],
       tech: ['React', 'Node.js', 'PostgreSQL'],
-      image: 'images/tamanu/soft-deletion.png',
+      image: '/images/tamanu/soft-deletion.png',
     },
   ];
 
@@ -67,7 +65,12 @@ const TamanuPage = () => {
       {/* Initial Section */}
       <section className="h-screen relative flex flex-col items-center justify-center overflow-hidden">
         {/* Background Image Layer */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-tamanu">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/images/tamanu.jpg)',
+          }}
+        >
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-900/50 to-gray-900/10" />
 

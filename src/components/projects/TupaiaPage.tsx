@@ -81,7 +81,7 @@ const TupaiaPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(' + '/images/tupaia.png' + ')',
+            backgroundImage: 'url(/images/tupaia.png)',
           }}
         >
           {/* Gradient Overlay */}
