@@ -5,11 +5,11 @@
             "dest": "/"
         },
         {
-            "src": "projects/tupaia",
+            "src": "/projects/tupaia",
             "dest": "/"
         },
         {
-            "src": "projects/tamanu",
+            "src": "/projects/tamanu",
             "dest": "/"
         }
     ]
