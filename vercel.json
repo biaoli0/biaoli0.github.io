@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "projects/tupaia",
+            "dest": "/"
+        },
+        {
+            "src": "projects/tamanu",
+            "dest": "/"
+        }
+    ]
+}
