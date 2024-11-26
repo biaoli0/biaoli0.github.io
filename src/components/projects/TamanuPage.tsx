@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowDown } from 'lucide-react';
 
-const backgroundImage = '/images/tamanu.jpg';
+const backgroundImage = 'images/tamanu.jpg';
 
 const TamanuPage = () => {
   // Project data
@@ -16,7 +16,7 @@ const TamanuPage = () => {
         'Integrated data visualization libraries including Recharts and Mapbox',
       ],
       tech: ['React', 'TypeScript', 'Recharts', 'Node.js', 'PostgreSQL'],
-      image: '/images/tamanu/patient-charts-sample.png',
+      image: 'images/tamanu/patient-charts-sample.png',
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const TamanuPage = () => {
         'Integrated with role-based access control',
       ],
       tech: ['React', 'Node.js', 'PostgreSQL'],
-      image: '/images/tamanu/soft-deletion.png',
+      image: 'images/tamanu/soft-deletion.png',
     },
   ];
 

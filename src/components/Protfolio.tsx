@@ -142,7 +142,7 @@ const Portfolio = () => {
                     </p>
                     <div className="mb-4 overflow-hidden rounded-lg">
                       <img
-                        src="/images/tupaia.png"
+                        src="images/tupaia.png"
                         alt="Dashboard and Geographical data visualization"
                         className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
@@ -171,7 +171,7 @@ const Portfolio = () => {
                     </p>
                     <div className="mb-4 overflow-hidden rounded-lg">
                       <img
-                        src="/images/tamanu.jpg"
+                        src="images/tamanu.jpg"
                         alt="Dashboard and Geographical data visualization"
                         className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
