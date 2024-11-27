@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { ArrowDown } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowDown, ChevronUp, ChevronDown } from 'lucide-react';
 
 const TupaiaPage = () => {
   // Project data
@@ -73,8 +73,38 @@ const TupaiaPage = () => {
     return () => observer.disconnect();
   }, []);
 
+  const scrollPage = (direction: 'up' | 'down') => {
+    const windowHeight = window.innerHeight;
+    const currentPosition = window.scrollY;
+    const targetPosition = direction === 'up' 
+      ? currentPosition - windowHeight 
+      : currentPosition + windowHeight;
+    
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 relative">
+      {/* Floating Scroll Buttons */}
+      <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4">
+        <button
+          onClick={() => scrollPage('up')}
+          className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
+          aria-label="Scroll up"
+        >
+          <ChevronUp className="h-6 w-6 text-gray-600" />
+        </button>
+        <button
+          onClick={() => scrollPage('down')}
+          className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
+          aria-label="Scroll down"
+        >
+          <ChevronDown className="h-6 w-6 text-gray-600" />
+        </button>
+      </div>
       {/* Initial Section */}
       <section className="h-screen relative flex flex-col items-center justify-center overflow-hidden">
         {/* Background Image Layer */}
