@@ -27,16 +27,11 @@ const TamanuPage = () => {
         'Integrated with role-based access control',
       ],
       tech: ['React', 'Node.js', 'PostgreSQL'],
-      image: '/images/tamanu/soft-deletion.png',
+      image: '/images/tamanu/soft-deletion.jpg',
     },
   ];
 
-  return (
-    <ProjectPage
-      title="Tamanu"
-      backgroundImage="/images/tamanu.jpg"
-      projects={projectData}
-    />
+  return <ProjectPage title="Tamanu" backgroundImage="/images/tamanu.jpg" projects={projectData} />;
 };
 
 export default TamanuPage;

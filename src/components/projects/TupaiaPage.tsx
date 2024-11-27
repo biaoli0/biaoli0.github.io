@@ -43,6 +43,14 @@ const TupaiaPage = () => {
       tech: ['React', 'Node.js', 'PostgreSQL'],
       image: '/images/tupaia/user-favourite.jpg',
     },
+    {
+      id: 4,
+      title: '@type package in monorepo',
+      description: `Introduce type package to be shared across monorepo, in order to support a tighter 
+      integration between microservices, as well as to generate schema from @types for input validation.`,
+      tech: ['Typescript', 'Ajv.js'],
+      image: '/images/tupaia/typescript-to-schema.jpg',
+    },
   ];
 
   // Intersection Observer setup
@@ -76,13 +84,12 @@ const TupaiaPage = () => {
   const scrollPage = (direction: 'up' | 'down') => {
     const windowHeight = window.innerHeight;
     const currentPosition = window.scrollY;
-    const targetPosition = direction === 'up' 
-      ? currentPosition - windowHeight 
-      : currentPosition + windowHeight;
-    
+    const targetPosition =
+      direction === 'up' ? currentPosition - windowHeight : currentPosition + windowHeight;
+
     window.scrollTo({
       top: targetPosition,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
@@ -182,17 +189,19 @@ const TupaiaPage = () => {
 
               <p className="text-gray-600 leading-relaxed">{project.description}</p>
 
-              <div className="space-y-4">
-                <h4 className="font-semibold text-gray-900">Key Responsibilities:</h4>
-                <ul className="space-y-2">
-                  {project.responsibilities.map((responsibility, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-2 flex-shrink-0" />
-                      <span className="text-gray-600">{responsibility}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {project.responsibilities && (
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-gray-900">Key Responsibilities:</h4>
+                  <ul className="space-y-2">
+                    {project.responsibilities.map((responsibility, index) => (
+                      <li key={index} className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-2 flex-shrink-0" />
+                        <span className="text-gray-600">{responsibility}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, index) => (

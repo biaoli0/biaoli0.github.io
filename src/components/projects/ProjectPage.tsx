@@ -48,13 +48,12 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ title, backgroundImage, proje
   const scrollPage = (direction: 'up' | 'down') => {
     const windowHeight = window.innerHeight;
     const currentPosition = window.scrollY;
-    const targetPosition = direction === 'up' 
-      ? currentPosition - windowHeight 
-      : currentPosition + windowHeight;
-    
+    const targetPosition =
+      direction === 'up' ? currentPosition - windowHeight : currentPosition + windowHeight;
+
     window.scrollTo({
       top: targetPosition,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
