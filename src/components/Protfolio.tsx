@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from './Intro';
 import TechnicalSkills from './TechnicalSkills';
 import WorkExperience from './WorkExperience';
+import SideProjects from './SideProjects';
 
 const Portfolio = () => {
   return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
       <main className="max-w-4xl mx-auto px-6 py-16">
         <TechnicalSkills />
         <WorkExperience />
+        <SideProjects />
       </main>
     </div>
   );
