@@ -27,7 +27,7 @@ const WorkExperience = () => {
               <h5 className="font-semibold text-gray-700 mb-4">Key Projects</h5>
 
               {/* Project 1 */}
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex justify-between items-start mb-4">
                   <h6 className="text-lg font-semibold">
                     Dashboard and Geographical data visualization
@@ -45,7 +45,7 @@ const WorkExperience = () => {
                   <img
                     src="images/tupaia.png"
                     alt="Dashboard and Geographical data visualization"
-                    className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-250"
                   />
                 </div>
 
@@ -58,7 +58,7 @@ const WorkExperience = () => {
               </div>
 
               {/* Project 2 */}
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex justify-between items-start mb-4">
                   <h6 className="text-lg font-semibold">
                     Electronic medical record (EMR) System
@@ -74,7 +74,7 @@ const WorkExperience = () => {
                   <img
                     src="images/tamanu.jpg"
                     alt="Dashboard and Geographical data visualization"
-                    className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-250"
                   />
                 </div>
                 <div className="flex gap-2 flex-wrap">
