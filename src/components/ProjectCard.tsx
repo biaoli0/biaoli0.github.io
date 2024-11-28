@@ -30,7 +30,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-250"
+          className="w-full h-64 object-cover rounded-lg"
         />
       </div>
       <div className="flex gap-2 flex-wrap">
