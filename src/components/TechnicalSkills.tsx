@@ -20,7 +20,7 @@ const TechnicalSkills = () => {
       <h3 className="text-2xl font-bold mb-6 text-gray-800">Technical Skills</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Backend Skills */}
-        <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+        <div className="p-6 bg-white rounded-lg shadow-sm">
           <div className="flex items-center mb-4">
             <h4 className="font-semibold">Backend Development</h4>
           </div>
@@ -35,7 +35,7 @@ const TechnicalSkills = () => {
         </div>
 
         {/* Frontend Skills */}
-        <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+        <div className="p-6 bg-white rounded-lg shadow-sm">
           <div className="flex items-center mb-4">
             <h4 className="font-semibold">Frontend Development</h4>
           </div>
@@ -50,7 +50,7 @@ const TechnicalSkills = () => {
         </div>
 
         {/* Database & Cloud Skills */}
-        <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+        <div className="p-6 bg-white rounded-lg shadow-sm">
           <div className="flex items-center mb-4">
             <h4 className="font-semibold">Database & Cloud</h4>
           </div>

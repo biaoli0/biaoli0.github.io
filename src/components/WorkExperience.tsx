@@ -1,19 +1,15 @@
 import React from 'react';
 import { ProjectCard } from './ProjectCard';
+import { Project } from '../types/Project';
 
-interface Project {
-  title: string;
-  route: string;
-  description: string;
-  image: string;
-  technologies: string[];
-}
+
 
 const projects: Project[] = [
   {
     title: 'Dashboard and Geographical data visualization',
     route: 'tupaia',
-    description: 'A data platform that allows you to collect information about any entity, aggregate it with other data sources, build beautiful analytics and reports, then disseminate, map and visualize it – all in one place.',
+    description:
+      'A data platform that allows you to collect information about any entity, aggregate it with other data sources, build beautiful analytics and reports, then disseminate, map and visualize it – all in one place.',
     image: 'images/tupaia.png',
     technologies: ['React.js', 'Rechart.js', 'Node.js', 'PostgreSQL'],
   },
@@ -48,7 +44,7 @@ const WorkExperience = () => {
             </div>
             {/* Key Projects Section */}
             <div className="space-y-6">
-              <h5 className="font-semibold text-gray-700 mb-4">Key Projects</h5>
+              <p className="text-sm text-gray-700 mb-4 text-start">Key Projects:</p>
 
               {projects.map((project) => (
                 <ProjectCard key={project.route} {...project} />
