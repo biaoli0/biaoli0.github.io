@@ -27,6 +27,7 @@ const SideProjects = () => {
         "Anthropic API",
         "Docker",
         "PostgreSQL",
+        "Prisma.js",
         "NGINX",
       ],
     },
