@@ -21,10 +21,13 @@ const SideProjects = () => {
       technologies: [
         "Node.js",
         "TypeScript",
+        "Nest.js",
         "Next.js",
         "Tailwind",
-        "Nest.js",
         "Anthropic API",
+        "Docker",
+        "PostgreSQL",
+        "NGINX",
       ],
     },
   ];
