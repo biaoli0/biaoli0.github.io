@@ -15,8 +15,8 @@ const SideProjects = () => {
     {
       title: "Followup RSS feeder",
       link: "https://followup.biao-li.com",
-      description: `A RSS feed creator that allows you to create a RSS feed for your blog posts 
-         or any website you want to follow up.`,
+      description: `An RSS feed creator that allows you to create RSS feeds for your blog posts 
+         or any website you want to follow.`,
       image: "images/side-projects/followup.png",
       technologies: [
         "Node.js",

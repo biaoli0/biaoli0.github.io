@@ -1,8 +1,8 @@
-import React from 'react';
-import Intro from './Intro';
-import TechnicalSkills from './TechnicalSkills';
-import WorkExperience from './WorkExperience';
-import SideProjects from './SideProjects';
+import React from "react";
+import Intro from "./Intro";
+import TechnicalSkills from "./TechnicalSkills";
+import WorkExperience from "./WorkExperience";
+import SideProjects from "./SideProjects";
 
 const Portfolio = () => {
   return (
